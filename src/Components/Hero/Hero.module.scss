@@ -1,0 +1,181 @@
+@import '../../Topography.module.scss';
+
+.container {
+    position: relative;
+    width: 1270px;
+    height: 800px;
+}
+
+.blackBack {
+    position: absolute;
+    width: 450px;
+    height: 100%;
+    background-color: black;
+    float: left;
+    overflow: hidden;
+}
+
+.titleWhite {
+    @include font-size-heading-XL;
+
+    position: absolute;
+    top: 190px;
+    left: 160px;
+    width: 514px;
+    color: white;
+}
+
+.imageContainer {
+    position: relative;
+    left: 450px;
+    width: 540px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.imageSmall {
+    display: none;
+}
+
+.titleBlack {
+    @include font-size-heading-XL;
+
+    position: absolute;
+    top: 190px;
+    left: -290px;
+    width: 514px;
+    color: $color-almost-black;
+}
+
+.content {
+    @include font-size-body-M;
+
+    position: absolute;
+    right: 0px;
+    top: 190px;
+    width: 350px;
+    color: $color-dark-grey;
+}
+
+.buttonContainer {
+    position: absolute;
+    top: 400px;
+    right: 90px;
+}
+
+@media all and (max-width:1270px) {
+    .container {
+        width: 768px;
+        height: 700px;
+    }
+
+    .blackBack {
+        display: none;
+    }
+
+    .titleWhite {
+        display: none;
+    }
+
+    .imageContainer {
+        left: 0px;
+        width: 437px;
+        height: 100%;
+        overflow: visible;
+    }
+
+    .imageSmall {
+        display: none;
+    }
+
+    .titleBlack {
+        @include font-size-heading-L;
+
+        top: 145px;
+        left: 389px;
+        width: 340px;
+    }
+
+
+    .content {
+        @include font-size-body-S;
+
+        right: 40px;
+        top: calc(145px + 178px);
+        width: 339px;
+
+    }
+
+    .buttonContainer {
+        position: absolute;
+        top: calc(145px + 338px);
+        right: 120px;
+    }
+
+}
+
+
+@media all and (max-width:768px) {
+    .container {
+        width: 100%;
+        height: 630px;
+    }
+
+    .imageContainer {
+        left: 0px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 375 / 240;
+        // background-color: red;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .imageBig {
+        display: none;
+    }
+
+    .imageSmall {
+        display: block;
+    }
+
+    .titleBlack {
+        @include font-size-heading-M;
+
+        top: 32px;
+        left: auto;
+        position: relative;
+        margin: 0 auto;
+        width: 323px;
+    }
+
+    .content {
+        @include font-size-body-S;
+
+        position: relative;
+        margin: 0 auto;
+        top: 60px;
+        width: 323px;
+        right: auto;
+        left: auto;
+
+    }
+
+    .buttonContainer {
+        position: relative;
+        top: 100px;
+        right: auto;
+        left: -36px;
+        margin: 0 auto;
+        width: 260px;
+    }
+
+}
