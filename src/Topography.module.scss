@@ -1,0 +1,40 @@
+@mixin font-size-heading-XL {
+    font-size: 96px;
+    line-height: 99px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+@mixin font-size-heading-L {
+    font-size: 70px;
+    line-height: 70px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+@mixin font-size-heading-M {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+@mixin font-size-heading-S {
+    font-size: 36px;
+    line-height: 36px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+@mixin font-size-body-M {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: 'Outfit', sans-serif;
+}
+
+@mixin font-size-body-S {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Outfit', sans-serif;
+}
+
+$color-background: hsl(0, 0%, 95%);
+$color-almost-black: hsl(0, 0%, 8%);
+$color-gold:hsl(24, 56%, 63%);
+$color-dark-grey:hsl(0, 0%, 27%);
