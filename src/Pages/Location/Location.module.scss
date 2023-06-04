@@ -1,0 +1,90 @@
+@import '../../Topography.module.scss';
+
+.container {
+    width: 100vw;
+    background-color: black;
+}
+
+.map {
+    width: 100%;
+    aspect-ratio: 1440 / 600;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.content {
+    @include font-size-body-M;
+
+    position: relative;
+    top: -5px;
+    padding: 96px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: $color-almost-black;
+    color: white;
+
+
+    span:first-of-type {
+        @include font-size-heading-L;
+        width: 350px;
+        color: white;
+    }
+
+    span:last-of-type {
+        width: 540px;
+
+        .title {
+            @include font-size-heading-S;
+            color: $color-gold;
+            padding-bottom: 32px;
+        }
+
+        .text {
+            @include font-size-body-M;
+            padding-top: 32px;
+        }
+    }
+}
+
+@media all and (max-width:1270px) {
+
+    .content {
+        padding: 68px;
+
+        span:first-of-type {
+            font-size: 50px;
+        }
+
+        span:last-of-type {
+            width: 398px;
+            font-size: 18px;
+
+            .title {
+                font-size: 32px;
+                padding-bottom: 20px;
+            }
+
+            .text {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media all and (max-width:768px) {
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+
+        span:first-of-type {
+            width: auto;
+            padding-bottom: 48px;
+        }
+    }
+}

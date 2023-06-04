@@ -1,6 +1,7 @@
 @import '../../Topography.module.scss';
 
 .container {
+    position: relative;
     width: 100vw;
     display: flex;
     justify-content: space-around;
