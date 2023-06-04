@@ -1,0 +1,54 @@
+@import '../../Topography.module.scss';
+
+.container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dark {
+    background-color: $color-almost-black;
+    color: white;
+}
+
+.light {
+    background-color: $color-gold;
+    color: $color-almost-black;
+}
+
+.title {
+    @include font-size-heading-S;
+
+    padding-top: 84px;
+    padding-bottom: 85px;
+}
+
+.text {
+    @include font-size-body-S;
+
+    width: 430px;
+}
+
+.socials {
+    img {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .container {
+        box-sizing: border-box;
+        padding: 38px;
+        align-items: flex-start;
+        flex-direction: column;
+        overflow: hidden;
+
+        div{
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    } 
+}
