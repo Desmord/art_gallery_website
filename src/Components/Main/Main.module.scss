@@ -4,6 +4,7 @@
     width: 1110px;
     margin: 0 auto;
     margin-top: 180px;
+    padding-bottom: 150px;
     display: grid;
     grid-template-columns: 350px 285px 445px;
     grid-template-rows: 400px 313px 377px;
@@ -78,7 +79,7 @@
         grid-template-columns: 40% calc(20% - 22px) 40%;
         grid-template-rows: 400px 313px 377px;
         gap: 11px;
-
+        padding-bottom: 120px;
     }
 
     .textTop {
